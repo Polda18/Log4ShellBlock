@@ -1,0 +1,8 @@
+name: Log4ShellBlock
+version: ${project.version}
+main: me.polda18.log4shellblock.Log4ShellBlock
+prefix: Log4ShellBlock
+load: STARTUP
+authors: [CZghost]
+description: Spigot plugin to detect and block JNDI lookups from chat used for Log4Shell attacks
+website: https://polda18.github.io/Log4ShellBlock

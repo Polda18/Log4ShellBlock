@@ -1,5 +1,5 @@
 # Log4ShellBlock
-Minecraft Spigot plugin for detecting Log4Shell attacks in chat. _Coming soon._
+Minecraft Spigot plugin for detecting Log4Shell attacks in chat.
 
 ## What is this about?
 As you might be aware, popular Java library Log4j contained a serious security flaw
@@ -18,14 +18,18 @@ plugin itself. The chat message is only logged when it's sent. So what if we cou
 messages by players to see if it contains the dreaded JNDI lookup? Yes, we certainly could.
 
 ## Plugin mechanics
-What I have envisioned is a simple plugin that detects the JNDI lookup in the message
-and bans the player accordingly. I might have a soft depend on popular punishment plugins
-that handle this functionality and detect their presence. If present, the plugin will
-use their API instead (provided the source code of them is available). Otherwise it will
-use vanilla features to ban players.
+This is a simple plugin that detects the JNDI lookup in the message and bans the player
+accordingly. In future, I might have a soft depend on popular punishment plugins that handle
+this functionality and detect their presence. If present, the plugin will use their API
+instead (provided the source code of them is available). Otherwise it will use vanilla
+features to ban players.
 
-Plugin will have no configuration, it will be simple install, reboot and use. Since
-newest versions of Minecraft have this vulnerability patched, the aim is directed
-at the older versions that might have this vulnerability. Notably the most widely used
-Minecraft version 1.8. Keep in touch and watch for a first testing release, as this
-is a plugin that might keep your server more secure.
+Plugin has no configuration, it is simple install, reboot and use. Since newest versions
+of Minecraft have this vulnerability patched, the aim is directed at the older versions
+that might have this vulnerability. Notably the most widely used Minecraft version 1.8.
+First testing release is out, so give this plugin a try if you want to make your server
+more secure. Source code is available here online, so you can look into it yourself.
+Since my IDE doesn't offer me Minecraft Spigot versions below 1.12, this is the Spigot
+API version this plugin is currently using. It may or may not work on older versions
+than Spigot Minecraft 1.12, but it is guaranteed to work on this version or newer.
+Tested version was 1.18.1.
